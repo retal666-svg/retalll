@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes - الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="https://i.pinimg.com/736x/5c/83/47/5c834781c21ccc7ffca5672317fd2d4d.jpg" alt="Loving Homes - Dog Resort">
+            </div>
+            <div class="hero-content">
+                <h1>مرحباً بك في Loving Homes</h1>
+                <p>منتجع فاخر وصالة حلاقة للكلاب - بيئة آمنة ومريحة لرفيقك الأفضل</p>
+                <button class="cta-button" onclick="window.location.href='packages.html'">استكشف الحزم</button>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="features">
+            <h2>مميزاتنا</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>إقامة مريحة</h3>
+                    <p>غرف مريحة مع تدفئة وتبريد أرضي</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏃</div>
+                    <h3>أنشطة يومية</h3>
+                    <p>مسارات رشاقة ومناطق لعب آمنة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🩺</div>
+                    <h3>رعاية صحية</h3>
+                    <p>خدمات بيطرية 24 ساعة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>خدمة التوصيل</h3>
+                    <p>توصيل واستلام من الباب</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>لماذا تختار Loving Homes؟</h2>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <p>في Loving Homes، نحن نقدم بيئة آمنة ونظيفة ومريحة للكلاب المحبوبة لديكم. فريقنا من الخبراء المتخصصين يهتم بكل كلب كأنه عضو في العائلة، مع تقديم أفضل الخدمات والرعاية على مدار الساعة.</p>
+                    <ul>
+                        <li>مراقبة 24/7 بواسطة فريق مدرب</li>
+                        <li>طاقم محترف ومؤهل</li>
+                        <li>مناطق لعب آمنة ومجهزة</li>
+                        <li>نظام غذائي متوازن حسب احتياجات كل كلب</li>
+                        <li>صالة حلاقة عصرية ومجهزة</li>
+                        <li>خدمات بيطرية طارئة</li>
+                    </ul>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://i.pinimg.com/1200x/72/dc/35/72dc358ba9302598484fd29508f2408c.jpg" alt="كلاب سعيدة في Loving Homes">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link active" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content contact-page" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>تواصل معنا</h1>
+            <p>نحن هنا لمساعدتك والإجابة على جميع استفساراتك</p>
+        </section>
+        
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>الهاتف</h3>
+                    <p>920000000</p>
+                    <p>متاح 24/7 للطوارئ</p>
+                    <button class="contact-btn" onclick="window.location.href='tel:920000000'">اتصل الآن</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@luxurydogresort.com</p>
+                    <p>نرد خلال 24 ساعة</p>
+                    <button class="contact-btn" onclick="window.location.href='mailto:info@luxurydogresort.com'">أرسل رسالة</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🏨</div>
+                    <h3>Loving Homes</h3>
+                    <p>🗺️ شارع ناثان، منطقة تسيم شا تسوي</p>
+                    <p>هونغ كونغ، الصين</p>
+                    <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2m2!2d114.1745!3d22.3193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjIzLjU5NjE0NzE5!5e0!3m2!1sen!2shk!4v1701234567890!5m2!1sen!2shk"
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <button class="contact-btn" onclick="openMap()">عرض الخريطة</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>ساعات العمل</h3>
+                    <p>الأحد - الخميس: 8:00 ص - 8:00 م</p>
+                    <p>الجمعة - السبت: 10:00 ص - 6:00 م</p>
+                    <p>الطوارئ: 24/7</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2>أرسل لنا رسالة</h2>
+            <form class="contact-form" onsubmit="submitContactForm(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">الموضوع *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر الموضوع</option>
+                            <option value="booking">حجز إقامة</option>
+                            <option value="grooming">خدمات تجميل</option>
+                            <option value="healthcare">استفسار طبي</option>
+                            <option value="packages">باقات مخصصة</option>
+                            <option value="complaint">شكوى</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">الرسالة *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dogName">اسم كلبك (إن وجد)</label>
+                    <input type="text" id="dogName" name="dogName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferredDate">التاريخ المفضل للزيارة</label>
+                    <input type="date" id="preferredDate" name="preferredDate">
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">أود تلقي النشرة البريدية والعروض الخاصة</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">إرسال الرسالة</button>
+            </form>
+        </section>
+        
+        <!-- Booking Form -->
+        <section class="booking-form-section">
+            <h2>احجز الآن</h2>
+            <p>املأ النموذج التالي لحجز مكان لرفيقك الأفضل</p>
+            <form class="booking-form" onsubmit="submitBookingForm(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ownerName">اسم المالك *</label>
+                        <input type="text" id="ownerName" name="ownerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerPhone">رقم الهاتف *</label>
+                        <input type="tel" id="ownerPhone" name="ownerPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dogBreed">نوع الكلب *</label>
+                        <input type="text" id="dogBreed" name="dogBreed" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogAge">عمر الكلب *</label>
+                        <input type="text" id="dogAge" name="dogAge" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dogWeight">وزن الكلب *</label>
+                        <input type="text" id="dogWeight" name="dogWeight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogGender">جنس الكلب *</label>
+                        <select id="dogGender" name="dogGender" required>
+                            <option value="">اختر</option>
+                            <option value="male">ذكر</option>
+                            <option value="female">أنثى</option>
+                            <option value="neutered">مخصي</option>
+                            <option value="spayed">مخصاة</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkInDate">تاريخ الوصول *</label>
+                        <input type="date" id="checkInDate" name="checkInDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOutDate">تاريخ المغادرة *</label>
+                        <input type="date" id="checkOutDate" name="checkOutDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="package">الباقة المطلوبة *</label>
+                    <select id="package" name="package" required>
+                        <option value="">اختر الباقة</option>
+                        <option value="daily">الباقة اليومية - 50 ريال/اليوم</option>
+                        <option value="classic">الباقة الكلاسيكية - 80 ريال/اليوم</option>
+                        <option value="premium">الباقة المميزة - 120 ريال/اليوم</option>
+                        <option value="custom">باقة مخصصة</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialNeeds">احتياجات خاصة أو ملاحظات</label>
+                    <textarea id="specialNeeds" name="specialNeeds" rows="3" placeholder="أي احتياجات خاصة، حساسية، أدوية، أو ملاحظات أخرى..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="transport" name="transport">
+                    <label for="transport">أحتاج خدمة التوصيل (30د إضافي)</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="grooming" name="grooming">
+                    <label for="grooming">أود إضافة جلسة تجميل (تبدأ من 40د )</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">أوافق على الشروط والأحكام*</label>
+                </div>
+                
+                <button type="submit" class="submit-btn booking-btn">تأكيد الحجز</button>
+            </form>
+        </section>
+    
+        <!-- Social Media -->
+        <section class="social-section">
+            <h2>تابعنا على وسائل التواصل الاجتماعي</h2>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <span class="social-icon">📘</span>
+                    <span>فيسبوك</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-icon">📷</span>
+                    <span>انستغرام</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-icon">🐦</span>
+                    <span>تويتر</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-icon">📹</span>
+                    <span>يوتيوب</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span class="social-icon">💬</span>
+                    <span>واتساب</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Emergency Contact -->
+        <section class="emergency-contact-banner">
+            <div class="emergency-content">
+                <h3>🚨 حالة طارئة؟</h3>
+                <p>اتصل بنا فوراً على الرقم الطارئ</p>
+                <a href="tel:920000000" class="emergency-number">920000000</a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

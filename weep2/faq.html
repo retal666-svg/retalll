@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link active" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content faq-page" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>الأسئلة الشائعة</h1>
+            <p>إجابات على الاستفسارات الأكثر شيوعاً حول خدماتنا ومرافقنا</p>
+        </section>
+        
+        <!-- Search Section -->
+        <section class="faq-search">
+            <div class="search-container">
+                <input type="text" id="faqSearch" placeholder="ابحث عن سؤال..." onkeyup="searchFAQ()">
+                <button onclick="searchFAQ()">🔍</button>
+            </div>
+        </section>
+        
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <div class="category-tabs">
+                <button class="category-tab active" onclick="showCategory('all')">جميع الأسئلة</button>
+                <button class="category-tab" onclick="showCategory('booking')">الحجز والإقامة</button>
+                <button class="category-tab" onclick="showCategory('services')">الخدمات</button>
+                <button class="category-tab" onclick="showCategory('health')">الصحة والسلامة</button>
+                <button class="category-tab" onclick="showCategory('payment')">الدفع والأسعار</button>
+            </div>
+        </section>
+        
+        <!-- FAQ Items -->
+        <section class="faq-items">
+            <div class="faq-item" data-category="booking">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>كيف أحجز مكان لكلبي؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>يمكنك حجز مكان لكلبك بعدة طرق:</p>
+                    <ol>
+                        <li>اتصل بنا على الرقم 920000000</li>
+                        <li>املأ نموذج الحجز في صفحة "تواصل معنا"</li>
+                        <li>زيارتنا شخصياً لمعاينة المرافق</li>
+                    </ol>
+                    <p>نطلب منك تقديم معلومات أساسية عن كلبك (النوع، العمر، الحالة الصحية، التطعيمات) لضمان توفير الرعاية المناسبة.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="services">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>هل يوجد خدمة توصيل؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نقدم خدمة التوصيل والاستلام من الباب:</p>
+                    <ul>
+                        <li>مركبات مجهزة خصيصاً لنقل الكلاب بأمان</li>
+                        <li>سائقون مدربون على التعامل مع الحيوانات</li>
+                        <li>تتبع GPS لضمان وصول كلبك بأمان</li>
+                        <li>تكلفة التوصيل: 30 ريال داخل المدينة</li>
+                    </ul>
+                    <p>يمكنك طلب الخدمة عند الحجز أو خلال فترة الإقامة.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="booking">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>ماذا أحضر مع كلبي عند الحجز؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>لضمان راحة كلبك، ننصح بإحضار:</p>
+                    <ul>
+                        <li>بطاقة التطعيمات وسجل الصحة</li>
+                        <li>طعام كلبك المعتاد (كافي لمدة الإقامة)</li>
+                        <li>لعبته المفضلة (للشعور بالأمان)</li>
+                        <li>سرير أو بطانية مألوفة</li>
+                        <li>أي أدوية خاصة مع تعليمات الاستخدام</li>
+                    </ul>
+                    <p>نحن نوفر جميع الاحتياجات الأساسية مثل الأوعية والأسرة واللعب، لكن إحضار أشياء مألوفة يساعد كلبك على التكيف بسرعة.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="services">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>كيف أطلب باقة مخصصة؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>لباقات مخصصة، يمكنك:</p>
+                    <ol>
+                        <li>التحدث مع مدير الصاحة لمناقشة احتياجات كلبك</li>
+                        <li>تحديد الخدمات التي تحتاجها</li>
+                        <li>الحصول على عرض سعر مخصص</li>
+                        <li>تأكيد الحجز بالباقة المخصصة</li>
+                    </ol>
+                    <p>نقدم باقات مخصصة للإقامات الطويلة، الكلاب ذات الاحتياجات الخاصة، والتدريب المتخصص.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="health">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>هل المرافق آمنة للكلاب؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، السلامة أولويتنا القصوى:</p>
+                    <ul>
+                        <li>سياج آمن عالي حول جميع المناطق الخارجية</li>
+                        <li>نظام مراقبة 24 ساعة</li>
+                        <li>إشراف مستمر من طاقم مدرب</li>
+                        <li>فصل الكلاب حسب الحجم والسلوك</li>
+                        <li>إجراءات طوارئ واضحة</li>
+                        <li>طبيب بيطري متواجد على مدار الساعة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="health">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>ما هي متطلبات التطعيمات؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نطلب من جميع الكلاب أن تكون مطعمة ضد:</p>
+                    <ul>
+                        <li>داء الكلب (Rabies)</li>
+                        <li>التهاب الكبد الكلبي</li>
+                        <li>البارفو</li>
+                        <li>الديستمبر</li>
+                    </ul>
+                    <p>يجب أن تكون التطعيمات محدثة قبل 14 يوماً على الأقل من تاريخ الإقامة. نطلب تقديم شهادة تطعيم رسمية.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="services">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>كم عدد مرات المشي يومياً؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>عدد مرات المشي يعتمد على الباقة المختارة:</p>
+                    <ul>
+                        <li><strong>الباقة اليومية:</strong> مرتان يومياً</li>
+                        <li><strong>الباقة الكلاسيكية:</strong> 3 مرات يومياً</li>
+                        <li><strong>الباقة المميزة:</strong> 4 مرات يومياً</li>
+                    </ul>
+                    <p>كل جولة مشي تستمر 15-20 دقيقة تحت إشراف موظف متخصص.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="payment">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>ما هي طرق الدفع المتاحة؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نقبل多种طرق الدفع:</p>
+                    <ul>
+                        <li>الدفع النقدي</li>
+                        <li>بطاقات الائتمان (فيزا، ماستر كارد)</li>
+                        <li>الدفع الإلكتروني (STC Pay)</li>
+                        <li>التحويل البنكي</li>
+                    </ul>
+                    <p>يجب دفع 50% من المبلغ عند الحجز والباقي عند استلام الكلب.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="booking">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>هل يمكنني زيارة كلبي خلال الإقامة؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نحن نشجع الزيارات:</p>
+                    <ul>
+                        <li>يمكنك زيارة كلبك في أي وقت خلال ساعات العمل</li>
+                        <li>نفضل تحديد موعد مسبق لضمان توظيف طاقم متاح</li>
+                        <li>يمكنك المشاركة في أنشطة مع كلبك</li>
+                        <li>نقدم تحديثات وصور يومية عبر الواتساب</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="health">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>ماذا يحدث إذا مرض كلبي؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>في حالة المرض:</p>
+                    <ol>
+                        <li>نقوم بإبلاغك فوراً</li>
+                        <li>الطبيب البيطري يقوم بالفحص</li>
+                        <li>نقدم العلاج اللازم</li>
+                        <li>نحتفظ بسجل مفصل للحالة الصحية</li>
+                        <li>في الحالات الطارئة، ننقل الكلب إلى أقرب مستشفى بيطري</li>
+                    </ol>
+                    <p>جميع التكاليف الطبية يتم الاتفاق عليها معك مقدماً.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="services">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>هل تقدمون خدمات تدريب؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نقدم خدمات تدريب متنوعة:</p>
+                    <ul>
+                        <li>تدريب أساسي على الأوامر</li>
+                        <li>تدريب على النظافة</li>
+                        <li>تدريب سلوك اجتماعي</li>
+                        <li>تدريب متقدم</li>
+                        <li>حل المشاكل السلوكية</li>
+                    </ul>
+                    <p>يمكن إضافة التدريب إلى أي باقة إقامة أو حجزه كخدمة مستقلة.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-category="payment">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>هل هناك خصومات للإقامات الطويلة؟</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، نقدم خصومات للإقامات الطويلة:</p>
+                    <ul>
+                        <li>إقامة أسبوع: خصم 20%</li>
+                        <li>إقامة شهر: خصم 30%</li>
+                        <li>إقامة 3 أشهر: خصم 40%</li>
+                    </ul>
+                    <p>كما نقدم خدمات مجانية مثل جلسة تجميل واحدة للإقامات الطويلة.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="faq-contact">
+            <h2>لم تجد إجابة سؤالك؟</h2>
+            <p>فريقنا جاهز للإجابة على جميع استفساراتك</p>
+            <div class="contact-options">
+                <button class="contact-btn" onclick="window.location.href='contact.html'">اتصل بنا</button>
+                <button class="contact-btn" onclick="window.location.href='tel:920000000'">اتصل الآن</button>
+                <button class="contact-btn" onclick="window.open('https://wa.me/966920000000')">واتساب</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

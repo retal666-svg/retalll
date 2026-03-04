@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحزم - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link active" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content packages-page" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>حزم الرعاية المتكاملة</h1>
+            <p>اختر الباقة الأنسب لرفيقك الأفضل من بين خياراتنا المتنوعة</p>
+        </section>
+        
+        <!-- Packages Grid -->
+        <section class="packages-section">
+            <div class="package-card daily">
+                <div class="package-header">
+                    <h3>🟤 الباقة اليومية</h3>
+                    <div class="package-price">
+                        <span class="price">50</span>
+                        <span class="currency">ريال/اليوم</span>
+                    </div>
+                </div>
+                <div class="package-content">
+                    <p>باقة أساسية مثالية للإقامة القصيرة مع الرعاية الأساسية</p>
+                    <ul class="package-features">
+                        <li>✓ المشي مرتين يومياً</li>
+                        <li>✓ منطقة لعب خارجية</li>
+                        <li>✓ مسار رشاقة</li>
+                        <li>✓ حفر في الرمل</li>
+                        <li>✓ طعام ومياه نظيفة</li>
+                        <li>✓ غرفة مريحة</li>
+                    </ul>
+                    <button class="package-btn" onclick="selectPackage('daily')">اختر هذه الباقة</button>
+                </div>
+            </div>
+            
+            <div class="package-card classic">
+                <div class="package-header">
+                    <h3>🤎 الباقة الكلاسيكية</h3>
+                    <div class="package-price">
+                        <span class="price">80</span>
+                        <span class="currency">ريال/اليوم</span>
+                    </div>
+                </div>
+                <div class="package-content">
+                    <p>باقة شاملة مع أنشطة إضافية ورعاية متميزة</p>
+                    <ul class="package-features">
+                        <li>✓ المشي 3 مرات يومياً</li>
+                        <li>✓ حظيرة لعب داخلية</li>
+                        <li>✓ منطقة استرخاء</li>
+                        <li>✓ جلسة تنظيف خفيفة</li>
+                        <li>✓ أنشطة تفاعلية</li>
+                        <li>✓ مراقبة صحية</li>
+                        <li>✓ صور يومية</li>
+                    </ul>
+                    <button class="package-btn" onclick="selectPackage('classic')">اختر هذه الباقة</button>
+                </div>
+            </div>
+            
+            <div class="package-card premium">
+                <div class="package-header">
+                    <h3>🤍 الباقة المميزة</h3>
+                    <div class="package-price">
+                        <span class="price">120</span>
+                        <span class="currency">ريال/اليوم</span>
+                    </div>
+                </div>
+                <div class="package-content">
+                    <p>باقة فاخرة مع رعاية شخصية وخدمات استثنائية</p>
+                    <ul class="package-features">
+                        <li>✓ المشي 4 مرات يومياً</li>
+                        <li>✓ أنشطة 4 مرات يومياً</li>
+                        <li>✓ تحديثات وصور يومية</li>
+                        <li>✓ مكافآت حسب الاتفاق</li>
+                        <li>✓ جلسة تدريب شخصية</li>
+                        <li>✓ عناية خاصة</li>
+                        <li>✓ تواصل مستمر مع المالك</li>
+                        <li>✓ تقرير مفصل يومي</li>
+                    </ul>
+                    <button class="package-btn" onclick="selectPackage('premium')">اختر هذه الباقة</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Custom Packages -->
+        <section class="custom-packages">
+            <h2>⭐ باقات مخصصة</h2>
+            <p>نقدم حلولاً مخصصة لتلبية الاحتياجات الخاصة لكلابكم</p>
+            
+            <div class="custom-grid">
+                <div class="custom-card">
+                    <div class="custom-icon">🏖️</div>
+                    <h3>للإقامات الطويلة</h3>
+                    <p>خصومات خاصة للإقامات التي تزيد عن أسبوع مع خدمات إضافية مجانية</p>
+                    <ul>
+                        <li>خصم 20% للإقامة أسبوع</li>
+                        <li>خصم 30% للإقامة شهر</li>
+                        <li>جلسة تجميل مجانية</li>
+                    </ul>
+                    <button class="custom-btn" onclick="requestCustom('long-term')">اطلب باقة مخصصة</button>
+                </div>
+                
+                <div class="custom-card">
+                    <div class="custom-icon">🦯</div>
+                    <h3>للكلاب ذات الاحتياجات الخاصة</h3>
+                    <p>رعاية خاصة للكلاب الكبيرة في السن أو التي تحتاج عناية طبية</p>
+                    <ul>
+                        <li>إشراف طبي دائم</li>
+                        <li>أدوية مجدولة</li>
+                        <li>أنشطة منخفضة التأثير</li>
+                        <li>راحة إضافية</li>
+                    </ul>
+                    <button class="custom-btn" onclick="requestCustom('special-needs')">اطلب باقة مخصصة</button>
+                </div>
+                
+                <div class="custom-card">
+                    <div class="custom-icon">🎓</div>
+                    <h3>باقات التدريب</h3>
+                    <p>برامج تدريبية متكاملة مع الإقامة لتطوير سلوك الكلب</p>
+                    <ul>
+                        <li>تدريب أساسي</li>
+                        <li>تدريب متقدم</li>
+                        <li>تدريب على الأوامر</li>
+                        <li>سلوك اجتماعي</li>
+                    </ul>
+                    <button class="custom-btn" onclick="requestCustom('training')">اطلب باقة مخصصة</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Comparison Table -->
+        <section class="comparison-section">
+            <h2>مقارنة الباقات</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الميزة</th>
+                            <th>يومية</th>
+                            <th>كلاسيكية</th>
+                            <th>مميزة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>المشي اليومي</td>
+                            <td>2 مرات</td>
+                            <td>3 مرات</td>
+                            <td>4 مرات</td>
+                        </tr>
+                        <tr>
+                            <td>اللعب والأنشطة</td>
+                            <td>أساسي</td>
+                            <td>متوسط</td>
+                            <td>شامل</td>
+                        </tr>
+                        <tr>
+                            <td>التنظيف</td>
+                            <td>أساسي</td>
+                            <td>جلسة خفيفة</td>
+                            <td>عناية كاملة</td>
+                        </tr>
+                        <tr>
+                            <td>الصور والتحديثات</td>
+                            <td>-</td>
+                            <td>صور يومية</td>
+                            <td>تحديثات مفصلة</td>
+                        </tr>
+                        <tr>
+                            <td>التدريب</td>
+                            <td>-</td>
+                            <td>أساسي</td>
+                            <td>شخصي</td>
+                        </tr>
+                        <tr>
+                            <td>التواصل مع المالك</td>
+                            <td>عند الضرورة</td>
+                            <td>يومي</td>
+                            <td>مستمر</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Booking CTA -->
+        <section class="booking-cta">
+            <h2>هل أنت مستعد لحجز مكان لرفيقك؟</h2>
+            <p>تواصل معنا الآن لتحديد الباقة الأنسب وحجز موعد</p>
+            <button class="cta-button" onclick="window.location.href='contact.html'">احجز الآن</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

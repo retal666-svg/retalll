@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرعاية الصحية - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link active" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content healthcare-page" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>الرعاية الصحية</h1>
+            <p>نظام صحي متكامل يضمن سلامة وصحة رفاقكم الأوفياء</p>
+        </section>
+        
+        <!-- Emergency Services -->
+        <section class="emergency-section">
+            <div class="emergency-content">
+                <div class="emergency-icon">🚨</div>
+                <h2>خدمات طبية طارئة 24 ساعة</h2>
+                <p>طبيب بيطري متواجد على مدار الساعة للتعامل مع أي حالة طارئة</p>
+                <div class="emergency-contact">
+                    <span class="emergency-number">920000000</span>
+                    <button class="emergency-btn" onclick="callEmergency()">اتصل الآن</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Healthcare Services -->
+        <section class="healthcare-services">
+            <h2>خدماتنا الصحية</h2>
+            <div class="services-grid">
+                <div class="health-service-card">
+                    <div class="service-icon">🩺</div>
+                    <h3>الفحوصات الدورية</h3>
+                    <p>فحوصات شاملة دورية لمراقبة الحالة الصحية العامة</p>
+                    <ul>
+                        <li>فحص جسدي كامل</li>
+                        <li>قياس الوزن ودرجة الحرارة</li>
+                        <li>فحص الأسنان والأذنين</li>
+                        <li>تقييم الحالة العامة</li>
+                    </ul>
+                </div>
+                
+                <div class="health-service-card">
+                    <div class="service-icon">💉</div>
+                    <h3>التطعيمات واللقاحات</h3>
+                    <p>جدول تطعيمات كامل حسب توصيات الأطباء البيطريين</p>
+                    <ul>
+                        <li>لقاحات أساسية</li>
+                        <li>لقاحات إضافية</li>
+                        <li>سجلات تطعيم مفصلة</li>
+                        <li>تذكيرات مواعيد الجرعات</li>
+                    </ul>
+                </div>
+                
+                <div class="health-service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3>صحة الفم والأسنان</h3>
+                    <p>عناية شاملة بصحة الفم والأسنان للوقاية من الأمراض</p>
+                    <ul>
+                        <li>تنظيف الأسنان</li>
+                        <li>فحص اللثة</li>
+                        <li>علاج التسوس</li>
+                        <li>نصائح العناية اليومية</li>
+                    </ul>
+                </div>
+                
+                <div class="health-service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>المختبر والتحاليل</h3>
+                    <p>مختبر مجهز لإجراء جميع التحاليل والفحوصات اللازمة</p>
+                    <ul>
+                        <li>تحاليل دم</li>
+                        <li>فحوصات بول</li>
+                        <li>تحاليل براز</li>
+                        <li>فحوصات خاصة</li>
+                    </ul>
+                </div>
+                
+                <div class="health-service-card">
+                    <div class="service-icon">💊</div>
+                    <h3>الرعاية الدوائية</h3>
+                    <p>إدارة الأدوية والعلاجات تحت إشراف طبي متخصص</p>
+                    <ul>
+                        <li>إعطاء الأدوية الموصوفة</li>
+                        <li>جدولة الجرعات</li>
+                        <li>مراقبة الآثار الجانبية</li>
+                        <li>تنسيق مع الطبيب المعالج</li>
+                    </ul>
+                </div>
+                
+                <div class="health-service-card">
+                    <div class="service-icon">🍎</div>
+                    <h3>التغذية الصحية</h3>
+                    <p>خطط غذائية متوازنة ومخصصة لكل كلب حسب احتياجاته</p>
+                    <ul>
+                        <li>تقييم الحالة الغذائية</li>
+                        <li>خطط غذائية مخصصة</li>
+                        <li>مكملات غذائية</li>
+                        <li>نصائح التغذية</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Monitoring System -->
+        <section class="monitoring-section">
+            <h2>نظام المراقبة الصحية</h2>
+            <div class="monitoring-content">
+                <div class="monitoring-text">
+                    <p>نحن نستخدم نظام مراقبة متطور لتتبع الحالة الصحية لكل كلب على مدار الساعة</p>
+                    <div class="monitoring-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <div>
+                                <h4>سجلات صحية إلكترونية</h4>
+                                <p>توثيق كامل للتاريخ الطبي والرعاية المقدمة</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📱</span>
+                            <div>
+                                <h4>تحديثات فورية</h4>
+                                <p>إشعارات فورية لأي تغيير في الحالة الصحية</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👁️</span>
+                            <div>
+                                <h4>مراقبة مستمرة</h4>
+                                <p>إشراف دائم من طاقم مدرب على مدار 24 ساعة</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📈</span>
+                            <div>
+                                <h4>تقارير دورية</h4>
+                                <p>تقارير مفصلة عن الحالة الصحية والنشاط</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-image">
+                    <img src="https://i.pinimg.com/736x/b6/32/b5/b632b5a98c4a20f35afb7d14c947c5b5.jpg" alt="نظام المراقبة">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Medical Team -->
+        <section class="medical-team">
+            <h2>الفريق الطبي</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://i.pinimg.com/1200x/0d/23/42/0d2342683923ef07504645aba34f0ee7.jpg" alt="طبيب بيطري">
+                    </div>
+                    <h4>د. أحمد محمد</h4>
+                    <p>طبيب بيطري رئيسي</p>
+                    <p>خبرة 15 عاماً في الطب البيطري</p>
+                    <div class="member-credentials">
+                        <span>🎓 دكتوراه في الطب البيطري</span>
+                        <span>📚 متخصص في جراحة الكلاب</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://i.pinimg.com/736x/f7/d9/26/f7d9264eb227057e2543142c685e0c9c.jpg" alt="طبيبة بيطرية">
+                    </div>
+                    <h4>د. فاطمة العلي</h4>
+                    <p>طبيبة بيطرية</p>
+                    <p>خبرة 10 سنوات في رعاية الحيوانات</p>
+                    <div class="member-credentials">
+                        <span>🎓 ماجستير في صحة الحيوان</span>
+                        <span>📚 متخصصة في الطب الوقائي</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://i.pinimg.com/736x/f0/00/10/f0001022eb9abc8d6309330924098d35.jpg" alt="ممرضة بيطرية">
+                    </div>
+                    <h4>نورة أحمد</h4>
+                    <p>ممرضة بيطرية</p>
+                    <p>خبرة 8 سنوات في الرعاية الصحية</p>
+                    <div class="member-credentials">
+                        <span>🎓 شهادة تمريض بيطري</span>
+                        <span>📚 متخصصة في العناية المركزة</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Health Guidelines -->
+        <section class="health-guidelines">
+            <h2>إرشادات صحية</h2>
+            <div class="guidelines-grid">
+                <div class="guideline-card">
+                    <h3>🏃 التمارين الرياضية</h3>
+                    <p>النشاط البدني المنتظم ضروري لصحة الكلب. نحن نضمن حصول كل كلب على التمارين المناسبة لعمه وحالته الصحية.</p>
+                </div>
+                
+                <div class="guideline-card">
+                    <h3>🍽️ التغذية السليمة</h3>
+                    <p>نظام غذائي متوازن يحتوي على جميع العناصر الغذائية الضرورة لنمو وصحة الكلب.</p>
+                </div>
+                
+                <div class="guideline-card">
+                    <h3>💧 الماء النظيف</h3>
+                    <p>توفير ماء نظيف وعذب طوال الوقت لضمان الترطيب الكافي والصحة العامة.</p>
+                </div>
+                
+                <div class="guideline-card">
+                    <h3>🧼 النظافة الشخصية</h3>
+                    <p>الحفاظ على نظافة الكلب وبيئته يمنع انتشار الأمراض ويعزز الصحة العامة.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Emergency Contact -->
+        <section class="emergency-contact-section">
+            <h2>في حالات الطوارئ</h2>
+            <div class="emergency-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <h3>الهاتف الطارئ</h3>
+                        <p>920000000 - متاح 24/7</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🏥</span>
+                    <div>
+                        <h3>أقرب مستشفى بيطري</h3>
+                        <p>مستشفى الحيوانات الوطني - 5 دقائق</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <div class="map-placeholder">
+                            <div class="map-icon">🗺️</div>
+                            <p>شارع ناثان، منطقة تسيم شا تسوي</p>
+                            <small>هونغ كونغ، الصين</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

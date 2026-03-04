@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العناية والتجميل - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link active" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content grooming-page" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>العناية والتجميل</h1>
+            <p>خدمات تجميل متكاملة لجعل رفيقك يبدو بأفضل شكل ويشعر بالراحة</p>
+        </section>
+        
+        <!-- Hero Section -->
+        <section class="grooming-hero">
+            <div class="hero-content">
+                <h2>صالة تجميل فاخرة</h2>
+                <p>نقدم خدمات عناية وتجميل احترافية باستخدام منتجات عالية الجودة وأحدث التقنيات لضمان راحة وسعادة كلبك</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.pinimg.com/736x/70/98/14/7098149c9a996fda0d45ddbb664f743a.jpg" alt="صالة التجميل">
+            </div>
+        </section>
+        
+        <!-- Services Grid -->
+        <section class="grooming-services">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/1200x/19/ec/5c/19ec5c0f02546f60804f57171a7e1d55.jpg" alt="الاستحمام">
+                    </div>
+                    <div class="service-content">
+                        <h3>🛁 الاستحمام الكامل</h3>
+                        <p>استحمام شامل باستخدام شامبو وبلسم طبيعي مناسب لنوع فرو كلبك</p>
+                        <ul>
+                            <li>شامبو طبيعي</li>
+                            <li>بلسم مغذي</li>
+                            <li>تجفيف آمن</li>
+                            <li>تدليك مريح</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">40</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('bath')">احجز الآن</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/736x/28/87/0c/28870cccd83cc938305062d2ecff8b49.jpg" alt="قص الشعر">
+                    </div>
+                    <div class="service-content">
+                        <h3>✂️ جلسة القص والتشذيب</h3>
+                        <p>قص وتشذيب احترافي حسب نوع كلبك وتطلعاتك الجمالية</p>
+                        <ul>
+                            <li>قص حسب النوع</li>
+                            <li>تشذيب دقيق</li>
+                            <li>تنسيق الأظافر</li>
+                            <li>تنظيف الأذنين</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">60</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('haircut')">احجز الآن</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/736x/20/d4/ef/20d4efa61e10785162be36048fe3c9e1.jpg" alt="التنظيف الكامل">
+                    </div>
+                    <div class="service-content">
+                        <h3>🧼 التنظيف والعناية</h3>
+                        <p>تنظيف شامل للعناية بصحة وتنظيف كلبك من الداخل والخارج</p>
+                        <ul>
+                            <li>تنظيف الأسنان</li>
+                            <li>تنظيف الأذنين</li>
+                            <li>قص الأظافر</li>
+                            <li>تنظيف العيون</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">30</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('cleaning')">احجز الآن</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/736x/90/fa/e4/90fae41cea76967fca9bb21761113cd7.jpg" alt="الاسترخاء">
+                    </div>
+                    <div class="service-content">
+                        <h3>🌿 جلسة الاسترخاء</h3>
+                        <p>جلسة استرخاء خاصة بالزيوت العطرية والتدليك لتهدئة كلبك</p>
+                        <ul>
+                            <li>تدليك مريح</li>
+                            <li>زيوت عطرية</li>
+                            <li>موسيقى هادئة</li>
+                            <li>بيئة مريحة</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">50</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('spa')">احجز الآن</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/1200x/5a/ab/16/5aab167d69d9bdff8dbf56554ebe6d38.jpg" alt="عناية خاصة">
+                    </div>
+                    <div class="service-content">
+                        <h3>⭐ عناية خاصة</h3>
+                        <p>خدمات مخصصة للكلاب ذات الاحتياجات الخاصة أو الحساسية</p>
+                        <ul>
+                            <li>منتجات hypoallergenic</li>
+                            <li>عناية بالبشرة الحساسة</li>
+                            <li>علاج مشاكل الفرو</li>
+                            <li>استشارة متخصصة</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">80</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('special')">احجز الآن</button>
+                    </div>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/736x/11/e9/ba/11e9ba104c19f1022c362eae05dd4aa8.jpg" alt="الباقة الكاملة">
+                    </div>
+                    <div class="service-content">
+                        <h3>👑 الباقة الكاملة</h3>
+                        <p>باقة شاملة تجمع بين جميع خدمات التجميل والعناية</p>
+                        <ul>
+                            <li>جميع الخدمات السابقة</li>
+                            <li>عطر خاص</li>
+                            <li>ربحة أنيقة</li>
+                            <li>هدية تذكارية</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">150</span>
+                            <span class="currency">ريال</span>
+                            <span class="discount">وفر 25%</span>
+                        </div>
+                        <button class="service-btn" onclick="bookService('full')">احجز الآن</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Booking Form -->
+        <section class="grooming-booking">
+            <h2>احجز خدمة تجميل</h2>
+            <p>املأ النموذج التالي لحجز موعد لرفيقك الأفضل</p>
+            <form class="grooming-booking-form" onsubmit="submitGroomingBooking(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ownerName">اسم المالك *</label>
+                        <input type="text" id="ownerName" name="ownerName" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerPhone">رقم الهاتف *</label>
+                        <input type="tel" id="ownerPhone" name="ownerPhone" required placeholder="05xxxxxxxx">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dogName">اسم الكلب *</label>
+                        <input type="text" id="dogName" name="dogName" required placeholder="اسم كلبك">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogBreed">نوع الكلب *</label>
+                        <input type="text" id="dogBreed" name="dogBreed" required placeholder="مثال: لابرادور، شيواهو">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="serviceType">نوع الخدمة *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="bath">🛁 الاستحمام الكامل</option>
+                            <option value="haircut">✂️ جلسة القص والتشذيب</option>
+                            <option value="cleaning">🧼 التنظيف والعناية</option>
+                            <option value="spa">🌿 جلسة الاسترخاء</option>
+                            <option value="special">⭐ عناية خاصة</option>
+                            <option value="full">👑 الباقة الكاملة</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredDate">التاريخ المفضل *</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="preferredTime">الوقت المفضل *</label>
+                        <select id="preferredTime" name="preferredTime" required>
+                            <option value="">اختر الوقت</option>
+                            <option value="09:00">9:00 ص</option>
+                            <option value="10:00">10:00 ص</option>
+                            <option value="11:00">11:00 ص</option>
+                            <option value="12:00">12:00 م</option>
+                            <option value="13:00">1:00 م</option>
+                            <option value="14:00">2:00 م</option>
+                            <option value="15:00">3:00 م</option>
+                            <option value="16:00">4:00 م</option>
+                            <option value="17:00">5:00 م</option>
+                            <option value="18:00">6:00 م</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogAge">عمر الكلب *</label>
+                        <input type="text" id="dogAge" name="dogAge" required placeholder="مثال: 2 سنوات">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialNotes">ملاحظات إضافية</label>
+                    <textarea id="specialNotes" name="specialNotes" rows="3" placeholder="أي معلومات إضافية عن كلبك (حساسية، سلوك، إلخ)"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="firstTime" name="firstTime">
+                    <label for="firstTime">هذه هي أول زيارة لكلبي</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="confirmBooking" name="confirmBooking" required>
+                    <label for="confirmBooking">أوافق على شروط وأحكام Loving Homes</label>
+                </div>
+                
+                <button type="submit" class="booking-submit-btn">تأكيد الحجز</button>
+            </form>
+        </section>
+        
+        <!-- Contact Info -->
+        <section class="grooming-contact">
+            <h2>تواصل معنا</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>الهاتف</h3>
+                    <p>920000000</p>
+                    <p>للاستفسارات والحجوزات</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>grooming@lovinghomes.com</p>
+                    <p>للاستفسارات التفصيلية</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <h3>ساعات العمل</h3>
+                    <p>الأحد - الخميس: 8:00 ص - 8:00 م</p>
+                    <p>الجمعة - السبت: 10:00 ص - 6:00 م</p>
+                </div>
+            </div>
+        </section>
+                        <!-- Process Section -->
+        <section class="grooming-process">
+            <h2>عملية التجميل</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>التقييم الأولي</h3>
+                        <p>فحص حالة كلبك وتحديد احتياجاته الخاصة</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>الاستعداد</h3>
+                        <p>تحضير الأدوات والمنتجات المناسبة لنوع الفرو</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>التنفيذ</h3>
+                        <p>تطبيق الخدمات المطلوبة برعاية وخبرة</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>المراجعة النهائية</h3>
+                        <p>التأكد من رضا كلبك ورضاك عن النتائج</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="grooming-testimonials">
+            <h2>آراء عملائنا</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"خدمة ممتازة! فريق محترف ويهتم بكل تفاصيل كلبي. أوصي بهم بشدة."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/customer1/50/50.jpg" alt="العميل">
+                        <div>
+                            <h4>أحمد محمد</h4>
+                            <p>صاحب لابرادور</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"مكان رائع ونظيف. كلبي كان سعيداً ومسترخياً خلال الجلسة. سأعود بالتأكيد."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/customer2/50/50.jpg" alt="العميلة">
+                        <div>
+                            <h4>سارة أحمد</h4>
+                            <p>صاحبة شيواهو</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"أسعار معقولة وجودة عالية. الفريق فهم تماماً ما يحتاجه كلبي."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/customer3/50/50.jpg" alt="العميل">
+                        <div>
+                            <h4>خالد العلي</h4>
+                            <p>صاحب جولدن ريتريفر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Section -->
+        <section class="products-section">
+            <h2>المنتجات التي نستخدمها</h2>
+            <p>نحن نستخدم فقط منتجات عالية الجودة وآمنة للكلاب</p>
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-icon">🌿</div>
+                    <h3>منتجات طبيعية</h3>
+                    <p>مكونات طبيعية 100% خالية من المواد الكيميائية الضارة</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🐰</div>
+                    <h3>غير مجربة على الحيوانات</h3>
+                    <p>جميع منتجاتنا حلالية وغير مجربة على الحيوانات</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🏆</div>
+                    <h3>جودة عالمية</h3>
+                    <p>نستخدم أفضل العلامات التجارية العالمية في العناية بالكلاب</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🌱</div>
+                    <h3>صديقة للبيئة</h3>
+                    <p>منتجات صديقة للبيئة وقابلة للتحلل الحيوي</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="grooming-faq">
+            <h2>أسئلة شائعة</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>كم من الوقت تستغرق جلسة التجميل؟</h3>
+                    <p>تستغرق الجلسة عادة من 2 إلى 4 ساعات حسب نوع الخدمة وحجم الكلب.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>هل يجب أن أحضر معي شيئاً؟</h3>
+                    <p>كل ما تحتاجه هو شهادة التطعيم الحالية. نوفر جميع المنتجات والأدوات.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>هل يمكنني البقاء مع كلبي خلال الجلسة؟</h3>
+                    <p>نعم، نرحب ببقاء المالكين مع كلابهم خلال الجلسة الأولى.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>كم مرة يجب أن أحضر كلبي للتجميل؟</h3>
+                    <p>ننصح بالزيارة كل 4-6 أسابيع للحفاظ على صحة فرو كلبك.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Booking CTA -->
+        <section class="booking-cta">
+            <h2>هل أنت مستعد لجعل كلبك يبدو رائعاً؟</h2>
+            <p>احجز موعداً الآن واستمتع بخصم 10% على أول زيارة</p>
+            <button class="cta-button" onclick="window.location.href='contact.html'">احجز موعداً الآن</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    <script>
+        // Grooming booking form submission
+        function submitGroomingBooking(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const bookingData = {
+                ownerName: formData.get('ownerName'),
+                ownerPhone: formData.get('ownerPhone'),
+                dogName: formData.get('dogName'),
+                dogBreed: formData.get('dogBreed'),
+                serviceType: formData.get('serviceType'),
+                preferredDate: formData.get('preferredDate'),
+                preferredTime: formData.get('preferredTime'),
+                dogAge: formData.get('dogAge'),
+                specialNotes: formData.get('specialNotes'),
+                firstTime: formData.get('firstTime'),
+                confirmBooking: formData.get('confirmBooking')
+            };
+            
+            // Show success message
+            showBookingConfirmation(bookingData);
+            
+            // Reset form
+            event.target.reset();
+        }
+        
+        function showBookingConfirmation(data) {
+            const serviceNames = {
+                'bath': '🛁 الاستحمام الكامل',
+                'haircut': '✂️ جلسة القص والتشذيب',
+                'cleaning': '🧼 التنظيف والعناية',
+                'spa': '🌿 جلسة الاسترخاء',
+                'special': '⭐ عناية خاصة',
+                'full': '👑 الباقة الكاملة'
+            };
+            
+            const confirmationMessage = `
+                ✅ تم استلام حجزك بنجاح!
+                
+                📋 تفاصيل الحجز:
+                🐾 اسم الكلب: ${data.dogName}
+                🏷️ نوع الخدمة: ${serviceNames[data.serviceType]}
+                📅 التاريخ: ${data.preferredDate}
+                ⏰ الوقت: ${data.preferredTime}
+                👤 اسم المالك: ${data.ownerName}
+                📞 الهاتف: ${data.ownerPhone}
+                
+                📞 سنتواصل معك خلال 24 ساعة لتأكيد الموعد
+                📍 العنوان: شارع الملك فهد، حي النخيل، الرياض
+            `;
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'booking-modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>✅ تأكيد الحجز</h3>
+                        <button class="close-modal" onclick="closeModal()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <pre>${confirmationMessage}</pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-btn" onclick="closeModal()">حسناً</button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            modal.style.display = 'block';
+        }
+        
+        function closeModal() {
+            const modal = document.querySelector('.booking-modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+        
+        // Service booking from service cards
+        function bookService(serviceType) {
+            // Scroll to booking form
+            const bookingForm = document.querySelector('.grooming-booking');
+            if (bookingForm) {
+                bookingForm.scrollIntoView({ behavior: 'smooth' });
+                
+                // Pre-fill service type
+                const serviceSelect = document.getElementById('serviceType');
+                if (serviceSelect) {
+                    serviceSelect.value = serviceType;
+                }
+            }
+        }
+        
+        // Set minimum date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('preferredDate');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.min = today;
+            }
+        });
+    </script>
+</body>
+</html>

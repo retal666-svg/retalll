@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرافق - Loving Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://img.lovepik.com/bg/20240204/Discover-the-Fascinating-Background-and-Breed-Information-of-Golden-Retriever_3173611_wh1200.jpg" alt="Loving Homes Logo" class="logo">
+            <h2>Loving Homes</h2>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 5px;">Dog Grooming & Resort</p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-search-term="رئيسية">الرئيسية</a></li>
+            <li><a href="about.html" class="nav-link" data-search-term="من نحن">من نحن</a></li>
+            <li><a href="facilities.html" class="nav-link active" data-search-term="مرافق">المرافق</a></li>
+            <li><a href="packages.html" class="nav-link" data-search-term="حزم">الحزم</a></li>
+            <li><a href="grooming.html" class="nav-link" data-search-term="عناية تجميل">العناية والتجميل</a></li>
+            <li><a href="healthcare.html" class="nav-link" data-search-term="رعاية صحية">الرعاية الصحية</a></li>
+            <li><a href="faq.html" class="nav-link" data-search-term="أسئلة شائعة">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" class="nav-link" data-search-term="تواصل">تواصل معنا</a></li>
+        </ul>
+        
+        <!-- Font Size Controls -->
+        <div class="font-controls">
+            <button onclick="changeFontSize('increase')" class="font-btn">A+</button>
+            <button onclick="changeFontSize('decrease')" class="font-btn">A-</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>مرافقنا المتطورة</h1>
+            <p>تصميم عصري ومريح يضمن أفضل تجربة لرفاقكم الأوفياء</p>
+        </section>
+        
+        <!-- Facilities Grid -->
+        <section class="facilities-grid">
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/93/de/c4/93dec43b223c6f1f155f47afbd6fd37c.jpg" alt="غرف الإقامة">
+                </div>
+                <div class="facility-content">
+                    <h3>🏠 غرف الإقامة المريحة</h3>
+                    <p>غرف واسعة ومريحة مجهزة بتدفئة وتبريد أرضي لضمان درجة حرارة مثالية طوال العام. كل غرفة تحتوي على سرير ناعم وأوعية طعام نظيفة.</p>
+                    <ul>
+                        <li>تدفئة وتبريد أرضي</li>
+                        <li>تهوية جيدة</li>
+                        <li>إضاءة طبيعية</li>
+                        <li>أسرة مريحة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/8b/ce/3b/8bce3b8141adfc83c15b73ed9eb7b875.jpg" alt="التلفزيون">
+                </div>
+                <div class="facility-content">
+                    <h3>📺 الترفيه والتلفزيون</h3>
+                    <p>شاشات تلفزيون في مناطق الاستراحة تعرض برامج مخصصة للكلاب للمساعدة في الاسترخاء والترفيه.</p>
+                    <ul>
+                        <li>قنوات مخصصة للكلاب</li>
+                        <li>موسيقى هادئة</li>
+                        <li>أجواء مريحة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/1c/5e/bc/1c5ebcdbb7b418b0c4d7cf6c1b60cc09.jpg" alt="المراعي الخارجية">
+                </div>
+                <div class="facility-content">
+                    <h3>🌿 المراعي الخارجية الآمنة</h3>
+                    <p>مساحات خضراء واسعة محاطة بسياج آمن للعب والجري بحرية تحت إشراف مستمر.</p>
+                    <ul>
+                        <li>سياج آمن عالي</li>
+                        <li>عشب طبيعي</li>
+                        <li>مناطق ظل</li>
+                        <li>إشراف دائم</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/12/57/2a/12572aaedbb286b45091c5ca917bf231.jpg" alt="حظيرة اللعب الداخلية">
+                </div>
+                <div class="facility-content">
+                    <h3>🎾 حظيرة اللعب الداخلية</h3>
+                    <p>منطقة داخلية كبيرة مجهزة بألعاب متنوعة ومساحات للتفاعل الاجتماعي بين الكلاب.</p>
+                    <ul>
+                        <li>ألعاب تفاعلية</li>
+                        <li>أسطح آمنة</li>
+                        <li>تهوية ممتازة</li>
+                        <li>مناطق للراحة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/1200x/5c/28/dc/5c28dca3bcad6632f2eaf3ea6b6bc1ea.jpg" alt="مساحة العشب الخاصة">
+                </div>
+                <div class="facility-content">
+                    <h3>🌱 مساحة العشب الخاصة</h3>
+                    <p>مناطق عشب مخصصة للكلاب التي تحتاج إلى مساحة خاصة للعب أو التدريب.</p>
+                    <ul>
+                        <li>عشب طبيعي نظيف</li>
+                        <li>مناطق معزولة</li>
+                        <li>معدات تدريب</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/1e/5b/3b/1e5b3ba346dd5249aafb5d781ef522ad.jpg" alt="مسار الرشاقة">
+                </div>
+                <div class="facility-content">
+                    <h3>🏃 مسار الرشاقة</h3>
+                    <p>مسار تدريب متكامل مع عقبات ومعدات رشاقة للحفاظ على لياقة الكلاب وتحفيزها ذهنياً.</p>
+                    <ul>
+                        <li>عقبات متنوعة</li>
+                        <li>معدات احترافية</li>
+                        <li>إشراف مدربين</li>
+                        <li>برامج تدريب</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/1200x/70/2e/97/702e975f0bd0f31e9a27f19ce9e894eb.jpg" alt="منطقة اللعب الخارجية">
+                </div>
+                <div class="facility-content">
+                    <h3>🎈 منطقة اللعب الخارجية</h3>
+                    <p>منطقة خارجية مجهزة بألعاب ومعدات متنوعة للمرح والتفاعل تحت إشراف فريق متخصص.</p>
+                    <ul>
+                        <li>ألعاب متنوعة</li>
+                        <li>مساحات آمنة</li>
+                        <li>إشراف مستمر</li>
+                        <li>تنظيف يومي</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/1200x/0a/af/6e/0aaf6e28876a7d319d4e4f651032af7d.jpg" alt="الخدمات البيطرية">
+                </div>
+                <div class="facility-content">
+                    <h3>🩺 خدمات بيطرية 24 ساعة</h3>
+                    <p>عيادة بيطرية مجهزة بالكامل وطاقم متخصص لتقديم الرعاية الصحية على مدار الساعة.</p>
+                    <ul>
+                        <li>طبيب بيطري متواجد 24/7</li>
+                        <li>معدات طبية حديثة</li>
+                        <li>فحوصات دورية</li>
+                        <li>سجلات صحية مفصلة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="https://i.pinimg.com/736x/8c/ea/ce/8ceace826a27c6ae0f58dd09c3abaf6a.jpg" alt="خدمة التوصيل">
+                </div>
+                <div class="facility-content">
+                    <h3>🚗 خدمة التوصيل</h3>
+                    <p>خدمة توصيل آمنة ومريحة لنقل الكلاب من وإلى المنزل باستخدام مركبات مجهزة خصيصاً.</p>
+                    <ul>
+                        <li>مركبات مجهزة</li>
+                        <li>سائقون مدربون</li>
+                        <li>تتبع GPS</li>
+                        <li>تواصل مستمر</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Safety Standards -->
+        <section class="safety-section">
+            <h2>معايير السلامة والنظافة</h2>
+            <div class="safety-grid">
+                <div class="safety-item">
+                    <div class="safety-icon">🔒</div>
+                    <h3>أمان تام</h3>
+                    <p>سياج آمن ونظام مراقبة على مدار الساعة</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">🧼</div>
+                    <h3>نظافة صارمة</h3>
+                    <p>تنظيف وتعقيم يومي لجميع المرافق</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">👥</div>
+                    <h3>إشراف مستمر</h3>
+                    <p>طاقم متواجد طوال الوقت لمراقبة الكلاب</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">📋</div>
+                    <h3>سجلات مفصلة</h3>
+                    <p>توثيق كامل للأنشطة والرعاية اليومية</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
